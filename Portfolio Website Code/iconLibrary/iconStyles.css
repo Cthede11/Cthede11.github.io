@@ -1,0 +1,36 @@
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+    background: #d92a2a;
+    color: white;
+}
+
+.fa-github {
+    background: #6E5494;
+    color: white;
+}
+
+.fa-instagram {
+    background: #DD2A7B;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0E76A8;
+    color: white;
+}
