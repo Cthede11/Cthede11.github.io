@@ -1,5 +1,5 @@
 .collapsible {
-    background-color: rgb(1, 50, 32);
+    background-color: rgb(1, 30, 22);
     color: rgb(245, 242, 226);
     cursor: pointer;
     padding: 18px;
@@ -12,11 +12,11 @@
   
   /* Add a background color to the button if it is clicked on */
   .active, .collapsible:hover {
-    background-color: rgb(31, 80, 62);
+    background-color: rgb(11, 60, 42);
   }
   
   /* Style the collapsible content. Note: hidden by default */
-  .content {
+  .collapsible-content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
