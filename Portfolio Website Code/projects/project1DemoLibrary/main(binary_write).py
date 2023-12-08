@@ -1,8 +1,7 @@
 """
 Names: Christian Thede, Maxwell Hunter
 Date: 11/15/2023
-Description: This program reads the BTCP1.csv file and takes only selected columns 
-             (BTCP1.csv can be replaced with BTCP2.csv).
+Description: This program reads the BTCP.csv file and takes only selected columns 
              It then hashes each row and writes the hashed result to a new file.
              It prints each hashed result to the console for debugging purposes.
              This program also records benchmarking information like memory usage, and CPU usage.
@@ -80,7 +79,7 @@ def hash_and_write_rows(file_path, selected_columns, output_file_path):
     print(f"CPU usage: {cpu_usage}%")
 
 # File paths
-input_file_path = "BTCP.csv"
+input_file_path = r"C:\Users\cthed\OneDrive\Documents\GitHub\Portfolio-Website\Portfolio Website Code\projects\project1DemoLibrary\BTCP.csv"
 output_file_path = "hashedUsers.txt"
 
 # Specific columns to hash
