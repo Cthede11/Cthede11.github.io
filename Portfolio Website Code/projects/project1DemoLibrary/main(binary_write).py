@@ -24,6 +24,13 @@ def hash_and_write_rows(file_path, selected_columns, output_file_path):
     # Record the start time
     start_time = time.time()
 
+    try:
+        with open(file_path, 'r') as f:
+            pass
+    except IOError:
+        print(f"Error: File {file_path} does not appear to exist.")
+        return
+
     with open(output_file_path, 'wb') as file:
         # Write selected columns to the output file
         file.write(','.join(selected_columns).encode('utf-8') + b'\n')
