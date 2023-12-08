@@ -80,7 +80,7 @@ def hash_and_write_rows(file_path, selected_columns, output_file_path):
 
 # File paths
 input_file_path = r"C:\Users\cthed\OneDrive\Documents\GitHub\Portfolio-Website\Portfolio Website Code\projects\project1DemoLibrary\BTCP.csv"
-output_file_path = "hashedUsers.txt"
+output_file_path = r"C:\Users\cthed\OneDrive\Documents\GitHub\Portfolio-Website\Portfolio Website Code\projects\project1DemoLibrary\hashedUsers.txt"
 
 # Specific columns to hash
 selected_columns = ["id", "possibly_sensitive", "source", "text", "user_screen_name"]
