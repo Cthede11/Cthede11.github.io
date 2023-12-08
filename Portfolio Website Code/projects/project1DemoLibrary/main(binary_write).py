@@ -14,7 +14,7 @@ import time
 import psutil
 
 def hash_data(data):
-    h = hashlib.new("md5")
+    h = hashlib.new("md5") #also used algorithms like sha256 and sha1
     h.update(data)
     return h.digest()
 
@@ -43,10 +43,12 @@ def hash_and_write_rows(file_path, selected_columns, output_file_path):
         # Record the end time for reading
         read_end_time = time.time()
 
+        """
         # Print DataFrame for debugging
         print("DataFrame before hashing:")
         print(df)
-
+        """
+        
         # Record the start time for hashing and writing
         hash_start_time = time.time()
 
@@ -79,8 +81,8 @@ def hash_and_write_rows(file_path, selected_columns, output_file_path):
     print(f"CPU usage: {cpu_usage}%")
 
 # File paths
-input_file_path = r"C:\Users\cthed\OneDrive\Documents\GitHub\Portfolio-Website\Portfolio Website Code\projects\project1DemoLibrary\BTCP.csv"
-output_file_path = r"C:\Users\cthed\OneDrive\Documents\GitHub\Portfolio-Website\Portfolio Website Code\projects\project1DemoLibrary\hashedUsers.txt"
+input_file_path = "BTCP.csv"
+output_file_path = "hashedUsers.txt"
 
 # Specific columns to hash
 selected_columns = ["id", "possibly_sensitive", "source", "text", "user_screen_name"]
