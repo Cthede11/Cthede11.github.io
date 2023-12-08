@@ -6,6 +6,17 @@
     text-decoration: none;
 }
 
+.circle {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
 .fa:hover {
     opacity: 0.7;
 }
@@ -19,6 +30,35 @@
     background: #6E5494;
     color: white;
 }
+
+.circle-github {
+    background: #6E5494;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.circle-github::before {
+    content: "\f09b"; /* GitHub icon unicode */
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+}
+
+.circle-github:hover .tooltip {
+    opacity: 1;
+    transition-duration: .3s;
+  }
+  
+  .circle:hover {
+    background-color: rgb(150, 94, 255);
+    transition-duration: .3s;
+  }
 
 .fa-instagram {
     background: rgb(201, 51, 106);
