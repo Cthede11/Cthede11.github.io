@@ -2,4 +2,3 @@ current issues:
     currently project1 contains my python script for CYBR 330 Final Project. It shows in the iframe
     but I am not able to run it in the HTML file yet.
 
-    
