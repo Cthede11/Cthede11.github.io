@@ -81,7 +81,7 @@ def hash_and_write_rows(file_path, selected_columns, output_file_path):
     print(f"CPU usage: {cpu_usage}%")
 
 # File paths
-input_file_path = "BTCP.csv"
+input_file_path = "Portfolio Website Code\projects\project1DemoLibrary\BTCP.csv"
 output_file_path = "hashedUsers.txt"
 
 # Specific columns to hash
