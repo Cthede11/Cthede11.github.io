@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Thede - Computer Science Portfolio</title>
+    <script src="indexScript.js" defer></script>
     <link rel="stylesheet" href="docs/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="docs/iconLibrary/iconStyles.css">
@@ -21,6 +22,7 @@
         <a href="docs/projects/projects.html">Projects</a>
         <!-- <a href="#blog">Blog</a> -->
         <a href="#resume">Resume</a>
+        <a href="#skills">Skills</a>
         <a href="#gallery">Gallery</a>
         <a href="#social">Social Media</a>
     </nav>
@@ -89,11 +91,42 @@
          </a>
     </section>
 
+    <section id="skills">
+        <h2>Coding Skills</h2>
+
+        <p>Python</p>
+        <div class="container">
+            <div class="skills python">85%</div>
+        </div>
+
+        <p>HTML</p>
+        <div class="container">
+            <div class="skills html">75%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="container">
+            <div class="skills css">50%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+            <div class="skills js">30%</div>
+        </div>
+
+        <p>PHP</p>
+        <div class="container">
+            <div class="skills php">10%</div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
     <section id="gallery">
         <h2>Gallery</h2>
-        <p>Add Pictures</p>
-        <a href="#">Show More</a>
-        <a href="#">Hide</a>
+        <button class="gallery-expand-button" onclick="expandFunction()">Expand</button>
+        <div id="expandGallary">
+            Gallary Pictures Here
+        </div>
     </section>
 
     <section id="social">
