@@ -271,3 +271,15 @@ main {
 .active, .projects-button:hover {
   background-color: rgb(11, 60, 42);
 }
+
+.code-window {
+  background-color: #1b1b1b; /* Light grey background */
+  border: black; /* Black border */
+  color: #ffffff; /* White text color */
+  padding: 10px; /* Add padding */
+  font-family: 'Courier New', monospace; /* Use monospace font */
+  font-size: 14px; /* Set font size */
+  line-height: 1.5; /* Set line height */
+  border-radius: 5px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Add shadow */
+}
