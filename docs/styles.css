@@ -250,7 +250,7 @@ main {
   color: white;
   border: none;
   cursor: pointer;
-  padding: .5%;
+  padding: .8%;
   outline: none;
 }
 
@@ -258,16 +258,16 @@ main {
   background-color: rgb(11, 60, 42);
 }
 
-.projects-expand-button {
+.projects-button {
   font-family: 'Arial', sans-serif;
   background-color: rgb(1, 30, 22);
   color: white;
   border: none;
   cursor: pointer;
-  padding: .5%;
+  padding: .8%;
   outline: none;
 }
 
-.active, .projects-expand-button:hover {
+.active, .projects-button:hover {
   background-color: rgb(11, 60, 42);
 }
