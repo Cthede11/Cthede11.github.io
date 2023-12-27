@@ -11,13 +11,15 @@ var expandButton = document.getElementById("expandButton");
 var expandGallary = document.getElementById("expandGallary");
 
 expandGallary.style.display = "none";
-
 expandButton.addEventListener("click", expandFunction);
 
-function expandFunction() {
-  if (expandGallary.style.display === "none") {
-    expandGallary.style.display = "block";
-  } else {
-    expandGallary.style.display = "none";
-  }
-}
+
+
+projectsButton.addEventListener("mouseover", function() {
+  this.classList.add("hover");
+});
+
+projectsButton.addEventListener("mouseout", function() {
+  this.classList.remove("hover");
+});
+
