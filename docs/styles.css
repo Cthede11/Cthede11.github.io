@@ -1,6 +1,7 @@
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'UI-rounded', 'fangsong';
+    font-size: 150%;
     margin: 0;
     padding: 0;
     background-color: rgb(1, 30, 22);
@@ -18,7 +19,7 @@ header {
 }
 
 h1 {
-    font-size: .2em;
+    font-size: .3em;
 }
 
 section {
@@ -280,8 +281,8 @@ main {
   color: #ffffff; /* White text color */
   padding: 10px; /* Add padding */
   font-family: 'Courier New', monospace; /* Use monospace font */
-  font-size: 14px; /* Set font size */
+  font-size: 18px; /* Set font size */
   line-height: 1.5; /* Set line height */
-  border-radius: 5px; /* Add border radius */
+  border-radius: 30px; /* Add border radius */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Add shadow */
 }

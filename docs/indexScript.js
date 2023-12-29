@@ -1,5 +1,5 @@
 function expandFunction() {
-  var x = document.getElementById("expandGallary");
+  var x = document.getElementById("expandGallery");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -8,9 +8,9 @@ function expandFunction() {
 }
 
 var expandButton = document.getElementById("expandButton");
-var expandGallary = document.getElementById("expandGallary");
+var expandGallery = document.getElementById("expandGallery");
 
-expandGallary.style.display = "none";
+expandGallery.style.display = "none";
 expandButton.addEventListener("click", expandFunction);
 
 
