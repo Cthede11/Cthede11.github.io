@@ -14,7 +14,7 @@ header {
     color: rgb(245, 242, 226);
     text-align: center;
     font-size: 200%;
-    padding: .2em;
+    padding: 5px;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 15px;
     background-color: rgb(245, 242, 226);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
@@ -34,12 +34,12 @@ h1, h2 {
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 footer {
     text-align: center;
-    padding: 1em;
+    padding: 20px;
     background-color: #333;
     color: rgb(245, 242, 226);
     background-color: rgb(0, 0, 35);
@@ -48,7 +48,8 @@ footer {
 nav {
     background-color: rgb(0, 0, 35);
     color: rgb(245, 242, 226);
-    padding: 10px;
+    padding: 20px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -65,7 +66,7 @@ nav a {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .about-container {
@@ -236,13 +237,14 @@ main {
   text-align: right; /* Right-align text */
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
+  padding-right: 5px; /* Add right padding */
+  color: black; /* White text color */
 }
 .python {width: 85%; background-color: #04aa04;} /* Green */
-.html {width: 75%; background-color: #8fe41f;} /* Green */
-.css {width: 50%; background-color: #f7b830;} /* Blue */
-.js {width: 30%; background-color: #ff8741;} /* Red */
-.php {width: 10%; background-color: #fd1818;} /* Dark Grey */
+.html {width: 75%; background-color: #86d420;} /* Green */
+.css {width: 50%; background-color: #e5ed12;} /* Blue */
+.js {width: 30%; background-color: #ffdd00;} /* Red */
+.php {width: 10%; background-color: #f2b500;} /* Dark Grey */
 
 .gallery-expand-button {
   font-family: 'Arial', sans-serif;
