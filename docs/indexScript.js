@@ -22,4 +22,3 @@ projectsButton.addEventListener("mouseover", function() {
 projectsButton.addEventListener("mouseout", function() {
   this.classList.remove("hover");
 });
-
