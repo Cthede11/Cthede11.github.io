@@ -16,6 +16,8 @@ body {
 
   nav {
       padding: 10px; /* Adjust padding for navigation links */
+      margin: 5; /* Adjust margin for navigation links */
+      size: 1em; /* Adjust font size for navigation links */
   }
 
   .about-container {
