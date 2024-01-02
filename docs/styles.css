@@ -311,6 +311,7 @@ main {
   nav {
     font-size: 14px; /* Adjust font size for navigation links on mobile devices */
     padding: 5px; /* Adjust padding for navigation links on mobile devices */
+    padding-top: 15px; /* Adjust padding for navigation links on mobile devices */
   }
 
   nav a {
@@ -342,6 +343,11 @@ main {
     border-radius: 5px; /* Add border radius to the button */
     background-color: rgb(0, 0, 35); /* Change background color of the button */
     color: rgb(245, 242, 226); /* Change text color of the button */
+  }
+
+  .code-window {
+    font-size: 14px; /* Adjust font size for code window on smaller screens */
+    
   }
 
   /* Add more responsive styles for other sections as needed */
