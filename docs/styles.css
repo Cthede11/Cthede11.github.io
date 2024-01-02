@@ -11,13 +11,14 @@ body {
   }
 
   header {
-      font-size: 150%; /* Adjust header font size for smaller screens */
+      font-size: 125%; /* Adjust header font size for smaller screens */
   }
 
   nav {
       padding: 10px; /* Adjust padding for navigation links */
+      padding-top: 5px; /* Adjust top padding for navigation links */
       margin: 5; /* Adjust margin for navigation links */
-      size: 1em; /* Adjust font size for navigation links */
+      size: .5em; /* Adjust font size for navigation links */
   }
 
   .about-container {
