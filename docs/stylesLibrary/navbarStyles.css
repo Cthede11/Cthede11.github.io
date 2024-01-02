@@ -71,4 +71,5 @@
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+    .openbtn {background-color: #111; color: white;}
   }
