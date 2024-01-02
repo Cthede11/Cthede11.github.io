@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="docs/stylesLibrary/indexStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="docs/iconLibrary/iconStyles.css">
+    <link rel="stylesheet" href="docs/stylesLibrary/navbarStyles.css">
+    <link rel="stylesheet" href="docs/stylesLibrary/skillBarStyles.css">
     
 </head>
 <body>
@@ -17,157 +19,164 @@
         <p>Christian Thede</p>
     </header>
     
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="docs/projects/projects.html">Projects</a>
-        <!-- <a href="#blog">Blog</a> -->
-        <a href="#resume">Resume</a>
-        <a href="#skills">Skills</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div id="sideBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="#about" onclick="closeNav()">About Me</a>
+        <a href="docs/projects/projects.html" onclick="closeNav()">Projects</a>
+        <a href="#resume" onclick="closeNav()">Resume</a>
+        <a href="#skills" onclick="closeNav()">Skills</a>
+        <a href="#gallery" onclick="closeNav()">Gallery</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+    <div id="main">
+        <div id="navbtn" class="navbtn">
+            <button class="openBtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        </div>
+    
 
-    <main>
+        <main>
 
-        <section id="about">
-            <h2></h2>
-            
-            <div class="about-container">
-                <img src="docs\images\seniorPicture.JPG" alt="My Image" class="about-image">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        Hello! I am a passionate computer science student with a keen interest in programming.
-                        I love solving complex problems and creating innovative solutions.
-                        I am currently pursuing a Computer Science Comprehensive major at the University of Nebraska at Kearney.
-                    </p>
-                    <button type="button" class="collapsible">Learn More</button>
-                    <div class="collapsible-content">
-                        <p>Collapsible Content Here</p>
-                    </div>
-                    <div class="collapsible-content">
-                        <p>Collapsible Content Here</p>
+            <section id="about">
+                <h2></h2>
+                
+                <div class="about-container">
+                    <img src="docs\images\seniorPicture.JPG" alt="My Image" class="about-image">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>
+                            Hello! I am a passionate computer science student with a keen interest in programming.
+                            I love solving complex problems and creating innovative solutions.
+                            I am currently pursuing a Computer Science Comprehensive major at the University of Nebraska at Kearney.
+                        </p>
+                        <button type="button" class="collapsible">Learn More</button>
+                        <div class="collapsible-content">
+                            <p>Collapsible Content Here</p>
+                        </div>
+                        <div class="collapsible-content">
+                            <p>Collapsible Content Here</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <!-- Project 1 description -->
+                </div>
+                
+                <div class="project">
+                    <!-- Project 2 description -->
+                </div>
+                <button class="projects-button" 
+                    onclick="window.location.href='docs/projects/projects.html'">
+                    See More 
+                </button>
+
+                <!-- Add more projects as needed -->
+            </section>
+
+        </main>
+    <!--
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Check out my latest thoughts and experiences in the world of computer science.</p>
+            <a href="#">Read More</a>
+        </section>
+    -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my skills and experiences.</p>
+
+            <!-- Resume Download-->
+            <a href="docs/ChristianThedeResume.pdf">
+                <button class="Btn">
+                    <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 
+                        12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 
+                        306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                    </svg>
+                    <span class="icon2"></span>
+                    <span class="tooltip">Download Resume</span>
+                </button>
+            </a>
+        </section>
+
+        <section id="skills">
+            <h2>Coding Skills</h2>
+
+            <p>Python</p>
+            <div class="container">
+                <div class="skills python">85%</div>
+            </div>
+
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">75%</div>
+            </div>
+            
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">50%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills js">30%</div>
+            </div>
+
+            <p>PHP</p>
+            <div class="container">
+                <div class="skills php">10%</div>
+            </div>
+            <!-- Add more skills as needed -->
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <button class="gallery-expand-button" onclick="expandFunction()">
+                Expand
+            </button>
+            <div id="expandGallery">
+                <div class="imageRow">
+                    <div class="imageColumn">
+                    <img src="docs\images\addyFall.JPEG" alt="Gallery Image" style="width:100%">
+                    </div>
+                    <div class="imageColumn">
+                    <img src="docs\images\deltIceSkating.JPEG" alt="Gallery Image" style="width:100%">
+                    </div>
+                    <div class="imageColumn">
+                    <img src="docs\images\joePlackeWedding.JPEG" alt="Gallery Image" style="width:100%">
+                    </div>
+                    <div class="imageColumn">
+                        <img src="docs\images\moonBall.JPEG" alt="Gallery Image" style="width:100%">
+                    </div>
+                    <div class="imageColumn">
+                        <img src="docs\images\zooLights.JPEG" alt="Gallery Image" style="width:100%">
+                    </div>
+                </div>
+                <!-- Add more pictures here -->
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <!-- Project 1 description -->
-            </div>
-            
-            <div class="project">
-                <!-- Project 2 description -->
-            </div>
-            <button class="projects-button" 
-                onclick="window.location.href='docs/projects/projects.html'">
-                See More 
-            </button>
-
-            <!-- Add more projects as needed -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><!--add media here--></p>
+            <a href="https://www.facebook.com/christian.thede.1/" class="fa fa-facebook"></a>
+            <a href="mailto:ThedeChristian11@gmail.com" class="fa fa-google"></a>
+            <a href="https://www.instagram.com/cthede11/" class="fa fa-instagram"></a>
+            <a href="https://github.com/Cthede11" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/christianthede/" class="fa fa-linkedin"></a>
         </section>
 
-    </main>
-<!--
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Check out my latest thoughts and experiences in the world of computer science.</p>
-        <a href="#">Read More</a>
-    </section>
--->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my resume to learn more about my skills and experiences.</p>
-
-        <!-- Resume Download-->
-        <a href="docs/ChristianThedeResume.pdf">
-            <button class="Btn">
-                <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 
-                    12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 
-                    306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
-                </svg>
-                <span class="icon2"></span>
-                <span class="tooltip">Download Resume</span>
-            </button>
-         </a>
-    </section>
-
-    <section id="skills">
-        <h2>Coding Skills</h2>
-
-        <p>Python</p>
-        <div class="container">
-            <div class="skills python">85%</div>
-        </div>
-
-        <p>HTML</p>
-        <div class="container">
-            <div class="skills html">75%</div>
-        </div>
-        
-        <p>CSS</p>
-        <div class="container">
-            <div class="skills css">50%</div>
-        </div>
-
-        <p>JavaScript</p>
-        <div class="container">
-            <div class="skills js">30%</div>
-        </div>
-
-        <p>PHP</p>
-        <div class="container">
-            <div class="skills php">10%</div>
-        </div>
-        <!-- Add more skills as needed -->
-    </section>
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <button class="gallery-expand-button" onclick="expandFunction()">
-            Expand
-        </button>
-        <div id="expandGallery">
-            <div class="imageRow">
-                <div class="imageColumn">
-                  <img src="docs\images\addyFall.JPEG" alt="Gallery Image" style="width:100%">
-                </div>
-                <div class="imageColumn">
-                  <img src="docs\images\deltIceSkating.JPEG" alt="Gallery Image" style="width:100%">
-                </div>
-                <div class="imageColumn">
-                  <img src="docs\images\joePlackeWedding.JPEG" alt="Gallery Image" style="width:100%">
-                </div>
-                <div class="imageColumn">
-                    <img src="docs\images\moonBall.JPEG" alt="Gallery Image" style="width:100%">
-                </div>
-                <div class="imageColumn">
-                    <img src="docs\images\zooLights.JPEG" alt="Gallery Image" style="width:100%">
-                </div>
-              </div>
-              <!-- Add more pictures here -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><!--add media here--></p>
-        <a href="https://www.facebook.com/christian.thede.1/" class="fa fa-facebook"></a>
-        <a href="mailto:ThedeChristian11@gmail.com" class="fa fa-google"></a>
-        <a href="https://www.instagram.com/cthede11/" class="fa fa-instagram"></a>
-        <a href="https://github.com/Cthede11" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/christianthede/" class="fa fa-linkedin"></a>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Christian Thede - Portfolio</p>
-    </footer>
+        <footer>
+            <p>&copy; 2023 Christian Thede - Portfolio</p>
+        </footer>
+    </div>
     <script src="docs/collapsibleLibrary/collapsibleAbout.js" defer></script>
     <script src="docs/scriptLibrary/indexScript.js" defer></script>
     <script src="docs/scriptLibrary/expandButtonScript.js" defer></script>
+    <script src="docs/scriptLibrary/navbarScript.js" defer></script>
 </body>
 
 </html>

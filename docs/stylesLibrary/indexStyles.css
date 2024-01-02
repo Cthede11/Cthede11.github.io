@@ -51,27 +51,6 @@ footer {
     background-color: rgb(0, 0, 35);
 }
 
-nav {
-    background-color: rgb(0, 0, 35);
-    color: rgb(245, 242, 226);
-    padding: 20px;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav a {
-    color: rgb(245, 242, 226);;
-    text-decoration: none;
-    margin: 0 15px;
-    border: 1px solid white;
-    padding: 2px;
-    margin: 5px;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -91,7 +70,6 @@ main {
 .about-text {
     flex-grow: 1;
 }
-
 
 /* download button */
 .Btn {
@@ -185,75 +163,6 @@ main {
   }
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
-
-/* Container for skill bars */
-.container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
-}
-
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  color: white; /* White text color */
-}
-
-.python {
-  width: 85%;
-  background-color: #04aa04; /* Green */
-  transform: translateZ(10px); /* Add 3D effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.html {
-  width: 75%;
-  background-color: #8fe41f; /* Green */
-  transform: translateZ(10px); /* Add 3D effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.css {
-  width: 50%;
-  background-color: #f7b830; /* Blue */
-  transform: translateZ(10px); /* Add 3D effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.js {
-  width: 30%;
-  background-color: #ff8741; /* Red */
-  transform: translateZ(10px); /* Add 3D effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.php {
-  width: 10%;
-  background-color: #fd1818; /* Dark Grey */
-  transform: translateZ(10px); /* Add 3D effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-  /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
-/* Container for skill bars */
-.container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
-}
-
-.skills {
-  text-align: right; /* Right-align text */
-  padding-top: 10px; /* Add top padding */
-  padding-bottom: 10px; /* Add bottom padding */
-  padding-right: 5px; /* Add right padding */
-  color: black; /* White text color */
-}
-.python {width: 85%; background-color: #04aa04;} /* Green */
-.html {width: 75%; background-color: #86d420;} /* Green */
-.css {width: 50%; background-color: #e5ed12;} /* Blue */
-.js {width: 30%; background-color: #ffdd00;} /* Red */
-.php {width: 10%; background-color: #f2b500;} /* Dark Grey */
 
 .gallery-expand-button {
   font-family: 'Arial', sans-serif;

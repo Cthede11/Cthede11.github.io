@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="iconLibrary/iconStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../stylesLibrary/projectIframeStyles.css">
+    <link rel="stylesheet" href="../stylesLibrary/navbarStyles.css">
 </head>
 <body>
 
@@ -15,81 +16,86 @@
         <p>Projects Showcase</p>
     </header>
 
-    <nav>
-        <a href="../../index.html">Home</a>
-        <a href="#project1">Project 1</a>
-        <a href="#project2">Project 2</a>
-        <!-- Add more links for navigation -->
-    </nav>
+    <div id="sideBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../../index.html" onclick="closeNav()">Home</a>
+        <a href="#project1" onclick="closeNav()">Project 1</a>
+        <a href="#project2" onclick="closeNav()">Project 2</a>
+    </div>
+    <div id="main">
+        <div id="navbtn" class="navbtn">
+            <button class="openBtn" onclick="openNav()">&#9776; Open Sidebar</button>
+        </div>
+        <main>
 
-    <main>
+            <!-- Project1 -->
+            <section id="project1" class="project">
+                <h2>Project 1: Hashing Algorithms with Large Datasets</h2>
 
-        <!-- Project1 -->
-        <section id="project1" class="project">
-            <h2>Project 1: Hashing Algorithms with Large Datasets</h2>
-
-            <iframe id="project1Demo" src="project1DemoLibrary/code1.txt" 
-            title="Hashing Algorithms with Large Datasets" height="400" 
-            width="100%" frameborder="0" allowfullscreen>
-            
-            </iframe>
-
-            &nbsp;
-
-            <p>
-                This project was a python script developed by Christian Thede and Maxwell Hunter. It takes information
-                from a csv file, hashes it, and writes the result into a seperate txt file. The goal of this project was to
-                test what we had learned about hashing and look at the time complexity of the different hashing algorithms.
-                If you would like more information please download the report below.
-            </p>
-
-                <!-- Download Button -->
-            <a href="project1DemoLibrary/Hashing Algorithms with Large Datasets.pdf">
-                    <button class="Btn">
-                        <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 
-                            12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 
-                            306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
-                        <span class="icon2"></span>
-                        <span class="tooltip">Download Report</span>
-                    </button>
-            </a>
-            <br> <!-- Line Break -->
-
-            <!-- Project 1 Github Link Button -->
-            <button class="projects-button" 
-                onclick="window.location.href='https://github.com/Cthede11/Project-Hashing-2023'">
-                See Code on GitHub
-            </button> 
-        </section>
-
-        <section id="project2" class="project">
-            <h2>Project 2</h2>
-            <div class="project-content" id="project2-content">
-                <!-- Demo iframe -->
-                <iframe id="project2Demo" src="projects/project2-demo.html"
-                    width="100%" height="400px" frameborder="0" allowfullscreen 
-                    style="border: 3px solid black;">
+                <iframe id="project1Demo" src="project1DemoLibrary/code1.txt" 
+                title="Hashing Algorithms with Large Datasets" height="400" 
+                width="100%" frameborder="0" allowfullscreen>
+                
                 </iframe>
+
+                &nbsp;
+
                 <p>
-                    Project 2 description.
+                    This project was a python script developed by Christian Thede and Maxwell Hunter. It takes information
+                    from a csv file, hashes it, and writes the result into a seperate txt file. The goal of this project was to
+                    test what we had learned about hashing and look at the time complexity of the different hashing algorithms.
+                    If you would like more information please download the report below.
                 </p>
-                <!-- Code link in github -->
+
+                    <!-- Download Button -->
+                <a href="project1DemoLibrary/Hashing Algorithms with Large Datasets.pdf">
+                        <button class="Btn">
+                            <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 
+                                12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 
+                                306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
+                            <span class="icon2"></span>
+                            <span class="tooltip">Download Report</span>
+                        </button>
+                </a>
+                <br> <!-- Line Break -->
+
+                <!-- Project 1 Github Link Button -->
                 <button class="projects-button" 
-                    onclick="window.location.href='https://github.com/Cthede11'">
+                    onclick="window.location.href='https://github.com/Cthede11/Project-Hashing-2023'">
                     See Code on GitHub
                 </button> 
-            </div>
-        </section>
+            </section>
 
-        <!-- Add more sections for additional projects as needed -->
+            <section id="project2" class="project">
+                <h2>Project 2</h2>
+                <div class="project-content" id="project2-content">
+                    <!-- Demo iframe -->
+                    <iframe id="project2Demo" src="projects/project2-demo.html"
+                        width="100%" height="400px" frameborder="0" allowfullscreen 
+                        style="border: 3px solid black;">
+                    </iframe>
+                    <p>
+                        Project 2 description.
+                    </p>
+                    <!-- Code link in github -->
+                    <button class="projects-button" 
+                        onclick="window.location.href='https://github.com/Cthede11'">
+                        See Code on GitHub
+                    </button> 
+                </div>
+            </section>
 
-    </main>
+            <!-- Add more sections for additional projects as needed -->
 
-    <footer>
-        <p>&copy; 2023 Christian Thede - Portfolio</p>
-    </footer>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Christian Thede - Portfolio</p>
+        </footer>
+    </div>
     <script src="..\scriptLibrary\indexScript.js" defer></script>
     <script src="docs/scriptLibrary/expandButtonScript.js" defer></script>
+    <script src="../scriptLibrary/navbarScript.js" defer></script>
 </body>
 </html>
  
