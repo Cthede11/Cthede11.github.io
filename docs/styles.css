@@ -11,7 +11,7 @@ body {
   }
 
   header {
-      font-size: 125%; /* Adjust header font size for smaller screens */
+      font-size: 2em; /* Adjust header font size for smaller screens */
   }
 
   nav {
