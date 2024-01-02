@@ -294,6 +294,20 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Add shadow */
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.imageColumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.imageRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -350,5 +364,18 @@ main {
     
   }
 
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .imageColumn {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  /* Clear floats after image containers */
+  .imageRow::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
   /* Add more responsive styles for other sections as needed */
 }
