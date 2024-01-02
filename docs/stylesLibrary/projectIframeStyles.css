@@ -21,3 +21,14 @@
     width: 100%;
     overflow: hidden;
 }
+
+ @media screen and (max-width: 600px) {
+    .project1Demo {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .project2Demo {
+        width: 100%;
+    }
+    
+ }
