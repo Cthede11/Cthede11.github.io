@@ -64,12 +64,12 @@ nav {
 }
 
 nav a {
-    color: black;
-    background-color: rgb(245, 242, 226);
+    color: rgb(245, 242, 226);;
     text-decoration: none;
     margin: 0 15px;
     border: 1px solid white;
-    padding: 1px;
+    padding: 0px;
+    padding-top: 1%;
     margin: 5px;
 }
 
