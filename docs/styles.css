@@ -64,9 +64,13 @@ nav {
 }
 
 nav a {
-    color: rgb(245, 242, 226);
+    color: black;
+    background-color: rgb(245, 242, 226);
     text-decoration: none;
     margin: 0 15px;
+    border: 1px solid white;
+    padding: 1px;
+    margin: 5px;
 }
 
 main {
@@ -368,7 +372,7 @@ main {
   .imageColumn {
     float: left;
     width: 50%;
-    padding: 5px;
+    padding: 2px;
   }
 
   /* Clear floats after image containers */
