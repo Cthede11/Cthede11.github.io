@@ -1,4 +1,46 @@
 
+/* Default styles for larger screens */
+body {
+  font-size: 16px;
+}
+
+/* Media query for screens smaller than 600px (mobile) */
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+
+  header {
+      font-size: 150%; /* Adjust header font size for smaller screens */
+  }
+
+  nav {
+      padding: 10px; /* Adjust padding for navigation links */
+  }
+
+  .about-container {
+      flex-direction: column; /* Stack image and text in a column on smaller screens */
+  }
+
+  .about-image {
+      max-width: 100%; /* Ensure the image takes full width on smaller screens */
+      margin-right: 0; /* Remove margin for smaller screens */
+      margin-bottom: 10px; /* Add margin between image and text on smaller screens */
+  }
+
+  .about-text {
+      text-align: center; /* Center-align text on smaller screens */
+  }
+
+  /* Add more responsive styles for other sections as needed */
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
     font-family: 'UI-rounded', 'fangsong';
     font-size: 150%;
