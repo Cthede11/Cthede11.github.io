@@ -288,6 +288,7 @@ main {
 
   .flex-container {
     flex-direction: column;
+    justify-content: center;
   }
 
   .project-content, .about-website {
