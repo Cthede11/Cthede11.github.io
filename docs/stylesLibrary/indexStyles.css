@@ -286,6 +286,10 @@ main {
     height: 50%;
   }
 
+  .flex-container {
+    flex-direction: column;
+  }
+  
   .about-container {
       flex-direction: column; /* Stack image and text in a column on smaller screens */
   }
