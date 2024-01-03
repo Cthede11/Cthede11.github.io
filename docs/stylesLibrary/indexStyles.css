@@ -23,6 +23,29 @@ header {
     padding: 5px;
 }
 
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  background: rgb(0, 0, 35);
+  color: rgb(245, 242, 226);
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+#closePopup {
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#popup h2 {
+  color: rgb(245, 242, 226);
+}
+
 h1 {
     font-size: .3em;
 }
@@ -247,6 +270,11 @@ main {
   /* Default styles for larger screens */
   body {
     font-size: 16px;
+  }
+
+  #popup {
+    width: 80%;
+    height: 50%;
   }
 
   .about-container {
