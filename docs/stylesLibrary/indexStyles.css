@@ -94,6 +94,15 @@ main {
     flex-grow: 1;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-content, .about-website {
+  width: 45%;
+}
+
 /* download button */
 .Btn {
     width: 50px;

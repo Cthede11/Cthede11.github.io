@@ -19,6 +19,7 @@
         <p>Christian Thede</p>
     </header>
     
+    <!-- Sidebar to navigate the site -->
     <div id="sideBar" class="sideBar">
         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
         <a href="#about" onclick="closeNav()">About Me</a>
@@ -44,9 +45,8 @@
 
         <main>
 
+            <!-- About Me Section -->
             <section id="about">
-                <h2></h2>
-                
                 <div class="about-container">
                     <img src="docs\images\seniorPicture.JPG" alt="My Image" class="about-image">
                     <div class="about-text">
@@ -66,21 +66,40 @@
                     </div>
                 </div>
             </section>
-
+            
+            <!-- Projects section -->
             <section id="projects">
-                <h2>Projects</h2>
+                <div class="flex-container">
+                    <div class="project-content">
+                        <h2 style="text-align: center;">Projects</h2>
+                        <p>Throughout my time of working to strenghthen my computer and coding skills I have completed a
+                            couple projects. I use these projects both as an opportunity to test and expand my skills and as a way to
+                            showcase my abilities. This website is one such project. I have coded it from the ground up, starting when
+                            I didn't know anything about CSS or JavaScript and was checking out outdated HTML books from the library to
+                            learn anything I could. I have learned a lot since then and I am excited to continue to grow as I learn more.
+                        </p>
+                        <button class="projects-button" 
+                            onclick="window.location.href='docs/projects/projects.html'">
+                            See More 
+                        </button>
+                    </div>
 
-                <div class="project">
-                    <!-- Project 1 description -->
+                    <div class="about-website">
+                        <h2 style="text-align: center;">About This Website</h2>
+                        <p>
+                            This website is a project I have been working on for a while. Through working on this website I have learned 
+                            not only about the code behind a website but have also put a lot of time into the design and layout. I have
+                            learned a lot about GitHub and how to use it to host a website. I have also learned a bit about git in general.
+                            I have gone through many iterations of this website and have had instances where I have put in hours of coding
+                            just to throw it all away and start over from scratch. Another this I have started gaining experience in is how
+                            to use CSS to style a website made for desktop to also work on mobile.
+                            This is one of the longest projects I have worked on and I am excited to continue to improve it as I learn more.
+                        </p>
+                    </div>
+
                 </div>
+
                 
-                <div class="project">
-                    <!-- Project 2 description -->
-                </div>
-                <button class="projects-button" 
-                    onclick="window.location.href='docs/projects/projects.html'">
-                    See More 
-                </button>
 
                 <!-- Add more projects as needed -->
             </section>
