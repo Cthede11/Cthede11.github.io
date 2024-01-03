@@ -37,3 +37,14 @@ document.getElementById('closePopup').onclick = function() {
       localStorage.setItem('visited', 'true');
   }
 }
+
+document.querySelector('.collapsible').addEventListener('click', function() {
+  var content = document.querySelector('.collapsible-content');
+  if (content.style.height) {
+      // If the content is expanded, collapse it
+      content.style.height = null;
+  } else {
+      // If the content is collapsed, expand it
+      content.style.height = content.scrollHeight + 'px';
+  }
+});
