@@ -289,7 +289,11 @@ main {
   .flex-container {
     flex-direction: column;
   }
-  
+
+  .project-content, .about-website {
+    width: 100%;
+  }
+
   .about-container {
       flex-direction: column; /* Stack image and text in a column on smaller screens */
   }
