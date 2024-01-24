@@ -53,7 +53,8 @@ h1 {
 section {
     padding: 20px;
     margin: 15px;
-    background-image: url('Portfolio-Website\docs\images\paper_background_image.jpg');
+    background-image: url('https://th.bing.com/th/id/OIP.MKgc6cGQEOuPcClfrpqSCQHaHa?w=147&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7');
+    background-blend-mode: multiply;
     background-color: rgb(245, 242, 226);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
