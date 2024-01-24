@@ -53,6 +53,7 @@ h1 {
 section {
     padding: 20px;
     margin: 15px;
+    background-image: url('Portfolio-Website\docs\images\paper_background_image.jpg');
     background-color: rgb(245, 242, 226);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
