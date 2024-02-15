@@ -16,9 +16,7 @@ window.onload = function() {
   // popup on page load
   document.getElementById('popup').style.display = 'block';
 
-  // Check if 'visited' flag is in local storage
   if (!localStorage.getItem('visited')) {
-    // If not, show the popup
     document.getElementById('popup').style.display = 'block';
   }
 }
@@ -35,10 +33,9 @@ document.getElementById('closePopup').onclick = function() {
 document.querySelector('.collapsible').addEventListener('click', function() {
   var content = document.querySelector('.collapsible-content');
   if (content.style.height) {
-      // If the content is expanded, collapse it
       content.style.height = null;
+
   } else {
-      // If the content is collapsed, expand it
       content.style.height = content.scrollHeight + 'px';
   }
 });

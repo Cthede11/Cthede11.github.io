@@ -229,15 +229,15 @@ main {
 }
 
 .code-window {
-  background-color: #1b1b1b; /* Light grey background */
-  border: black; /* Black border */
-  color: #ffffff; /* White text color */
-  padding: 10px; /* Add padding */
-  font-family: 'Courier New', monospace; /* Use monospace font */
-  font-size: 18px; /* Set font size */
-  line-height: 1.5; /* Set line height */
-  border-radius: 30px; /* Add border radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Add shadow */
+  background-color: #1b1b1b;
+  border: black;
+  color: #ffffff;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -264,21 +264,20 @@ main {
   }
 
   header {
-      font-size: 150%; /* Adjust header font size for smaller screens */
-      padding-bottom: 0px; /* Adjust padding for smaller screens */
+      font-size: 150%;
+      padding-bottom: 0px;
   }
 
   nav {
-    font-size: 14px; /* Adjust font size for navigation links on mobile devices */
-    padding: 5px; /* Adjust padding for navigation links on mobile devices */
-    padding-top: 15px; /* Adjust padding for navigation links on mobile devices */
+    font-size: 14px;
+    padding: 5px;
+    padding-top: 15px;
   }
 
   nav a {
-    margin: 1%; /* Adjust margin for navigation links on mobile devices */
+    margin: 1%;
   }
   
-  /* Default styles for larger screens */
   body {
     font-size: 16px;
   }
@@ -297,29 +296,29 @@ main {
   }
 
   .about-container {
-      flex-direction: column; /* Stack image and text in a column on smaller screens */
+      flex-direction: column;
   }
 
   .about-image {
-      max-width: 100%; /* Ensure the image takes full width on smaller screens */
-      margin-right: 0; /* Remove margin for smaller screens */
-      margin-bottom: 10px; /* Add margin between image and text on smaller screens */
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
   }
 
   .about-text {
-      text-align: center; /* Center-align text on smaller screens */
+      text-align: center;
   }
 
   .projects-button, .gallery-expand-button{
-    font-size: 1.2em; /* Increase font size of the button */
-    padding: 2%; /* Increase padding of the button */
-    border-radius: 5px; /* Add border radius to the button */
-    background-color: rgb(0, 0, 35); /* Change background color of the button */
-    color: rgb(245, 242, 226); /* Change text color of the button */
+    font-size: 1.2em;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 35);
+    color: rgb(245, 242, 226);
   }
 
   .code-window {
-    font-size: 14px; /* Adjust font size for code window on smaller screens */
+    font-size: 14px;
     
   }
 
