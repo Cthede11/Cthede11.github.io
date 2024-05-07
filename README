@@ -9,12 +9,7 @@ The website is built using HTML, CSS, and JavaScript. It is responsive and works
 -This website is hosted on GitHub Pages and can be accessed at the following URL: https://christian-thede.github.io/portfolio-website/
 
 Features:
-It includes a home page, and projects page. 
-
-Installation:
-To get a local copy up and running, follow these steps:
-1. Clone the repository.
-2. Open the index.html file in your browser.
+It includes a home page, and projects page with my resume, programming skills, gallery, and contact links. 
 
 Usage:
 Navigate through the website using the navigation bar at the top of the page.
