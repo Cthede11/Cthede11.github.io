@@ -133,7 +133,7 @@ def Adder(inputList, sumList):
 
 
 def takeUserInput():
-    # accidentally made the entire thing work on one input list
+    # combine inputs for adder to work with
     print("Enter the variables to be added, with every single integer separated by commas")
     userInput1 = input("Enter the first variable: ")
     userInput2 = input("Enter the second variable: ")
@@ -141,7 +141,7 @@ def takeUserInput():
     userInputList2 = userInput2.split(",")
     userInputList1.reverse()
     userInputList2.reverse()
-    # combine the two lists into one, iteratively
+    # combine the two lists into one, alternating
     finInputList = [item for sublist in zip(userInputList1, userInputList2) for item in sublist]
     finInputList = [int(i) for i in finInputList]
     print(finInputList)
