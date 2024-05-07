@@ -14,6 +14,8 @@ var changeBtn = document.getElementById("navbtn");
     changeBtn.addEventListener("hover", function() {
 });
 
+
+
 changeBtn.addEventListener("click", function() {
     var sideBar = document.getElementById("sideBar");
 
@@ -26,3 +28,7 @@ changeBtn.addEventListener("click", function() {
         changeBtn.innerText = "Open Nav";
     }
 });
+
+window.addEventListener('load', function () {
+    document.getElementById("navbtn").click();
+  });

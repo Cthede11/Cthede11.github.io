@@ -15,6 +15,7 @@ if (projectsButton) {
 window.onload = function() {
   // popup on page load
   document.getElementById('popup').style.display = 'block';
+  
 
   if (!localStorage.getItem('visited')) {
     document.getElementById('popup').style.display = 'block';
