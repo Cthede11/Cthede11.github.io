@@ -32,9 +32,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
   }
   
+  .x86 {
+    width: 40%;
+    background-color: #fffc41; /* Green */
+    transform: translateZ(10px); /* Add 3D effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+  }
+
   .js {
     width: 30%;
-    background-color: #ff8741; /* Red */
+    background-color: #ffcc41; /* Red */
+    transform: translateZ(10px); /* Add 3D effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+  }
+
+  .arm {
+    width: 30%;
+    background-color: #ffcc41; /* Green */
     transform: translateZ(10px); /* Add 3D effect */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow */
   }
@@ -64,6 +78,8 @@
   .python {width: 85%; background-color: #04aa04;} /* Green */
   .html {width: 75%; background-color: #86d420;} /* Green */
   .css {width: 50%; background-color: #e5ed12;} /* Blue */
+  .x86 {width: 40%; background-color: #fffc41;} /* Green */
   .js {width: 30%; background-color: #ffdd00;} /* Red */
+  .arm {width: 30%; background-color: #ffdd00;} /* Green */
   .php {width: 10%; background-color: #f2b500;} /* Dark Grey */
   
