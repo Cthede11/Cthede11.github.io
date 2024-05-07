@@ -1,1 +1,28 @@
+Portfolio Website
 
+Author: Christian Thede
+Date: Nov, 2021
+
+Introduction:
+This website is a portfolio website that showcases my work as a web developer.
+The website is built using HTML, CSS, and JavaScript. It is responsive and works on all devices (as far as I know).
+-This website is hosted on GitHub Pages and can be accessed at the following URL: https://christian-thede.github.io/portfolio-website/
+
+Features:
+It includes a home page, about page, portfolio page, and contact page. 
+
+Installation:
+To get a local copy up and running, follow these steps:
+1. Clone the repository.
+2. Open the index.html file in your browser.
+
+Usage:
+Navigate through the website using the navigation bar at the top of the page.
+
+Credits:
+This website was created by Christian Thede as a part of the H-Option at the University of Nebraska at Kearney.
+
+License:
+[MIT](https://choosealicense.com/licenses/mit/)
+
+This website is a work in progress and will be updated as I continue to work on it.
